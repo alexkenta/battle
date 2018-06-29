@@ -1,0 +1,17 @@
+.first {
+    color: green;
+}
+
+.second {
+    color: red;
+}
+
+.winner {
+    display: inline-block;
+}
+
+img {
+    max-height: 300px;
+    max-width: 300px;
+    border: solid 1px black;
+}

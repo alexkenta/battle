@@ -1,0 +1,25 @@
+#player1Box, #player2Box {
+    display: inline-block;
+    width: 350px; 
+    border: solid 1px black;
+    padding: 10px;
+    height: 180px;
+}
+
+#player2Box {
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    width: 100%;    
+    margin: auto;
+}
+
+img {
+    max-width: 300px;
+    max-height: 100px;
+}

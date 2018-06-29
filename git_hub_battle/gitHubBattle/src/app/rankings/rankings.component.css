@@ -1,0 +1,14 @@
+img {
+    max-width: 300px;
+    max-height: 100px;
+}
+
+.photoName {
+    width: 400px;
+    height: 150px;
+    border: solid 1px black;
+}
+
+.eachUser {
+    border: solid 1px black;
+}

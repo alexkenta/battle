@@ -1,0 +1,47 @@
+<div id="player1Box">
+  <div *ngIf="!gotPlayerOne">
+    <h1>Player 1</h1>
+  {{playerOne.login}}
+  <form (submit)="getPlayerOne()" #formOne="ngForm">
+    <label for="pOne">Github Username: </label>
+    <input type="text" name="pOne"
+    required
+    [(ngModel)]="playerOne.name"
+    #name = "ngModel"
+    >
+    <br>
+    <input type="submit" value="Get User" class="btn-primary button txt-center">
+  </form>
+  </div>
+
+  <div *ngIf="gotPlayerOne">
+    <img src={{playerOneInfo.avatar_url}} alt="avatar">
+    <h3>{{playerOneInfo.login}}</h3>
+  </div>
+</div>
+
+
+
+<div id="player2Box">
+  <div *ngIf="!gotPlayerTwo">
+    <h1>Player 2</h1>
+  {{playerTwo.login}}
+  <form (submit)="getPlayerTwo()" #formTwo="ngForm">
+    <label for="pTwo">Github Username: </label>
+    <input type="text" name="pTwo"
+    required
+    [(ngModel)]="playerTwo.name"
+    #name = "ngModel"
+    >
+    <br>
+    <input type="submit" value="Get User" class="btn-primary button txt-center">
+  </form>
+  </div>
+
+  <div *ngIf="gotPlayerTwo">
+    <img src={{playerTwoInfo.avatar_url}} alt="avatar">
+    <h3>{{playerTwoInfo.login}}</h3>
+  </div>
+</div>
+<br>
+<button *ngIf="playerOneInfo && playerTwoInfo" (click)="battle()">nerd fight!!</button>

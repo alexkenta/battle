@@ -1,0 +1,20 @@
+<div *ngIf="p1Score > p2Score" class="winner">
+  <h1 class="first">1st Place</h1>
+  <h4>{{p1.login}} score: {{p1Score}}</h4>
+  <h1 class="second">2nd Place</h1>
+  <h4>{{p2.login}} score: {{p2Score}}</h4>  
+  <img src={{p1.avatar_url}} alt="">
+</div>
+
+<div *ngIf="p2Score > p1Score" class="winner">
+    <h1 class="first">1st Place</h1>
+    <h4>{{p2.login}} score: {{p2Score}}</h4>  
+    <h1 class="second">2nd Place</h1>
+    <h4>{{p1.login}} score: {{p1Score}}</h4>
+    <img src={{p2.avatar_url}} alt="">
+</div>
+
+<div *ngIf="p1Score == p2Score" class="winner">
+  <h1>It's a tie!</h1>
+</div>
+

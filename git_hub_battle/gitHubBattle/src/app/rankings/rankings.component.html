@@ -1,0 +1,9 @@
+<h1>Rankings</h1>
+
+<div *ngFor="let user of allUsers | sortby:'score'" class="eachUser">
+  <div class="photoName">
+    <img src={{user.photoUrl}} alt="">
+    <p>{{user.login}}</p>
+  </div>
+  <h1>{{user.score}}</h1>
+</div>
